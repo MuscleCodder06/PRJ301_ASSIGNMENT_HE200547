@@ -1,0 +1,327 @@
+/* ===== Layout cơ bản ===== */
+
+.main-content {
+    padding: 10px 0; /* Ép lề giống y chang trang List of Staffs */
+}
+.page-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.dashboard-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    font-family: Arial, sans-serif;
+}
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+.stat-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.stat-number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Bộ màu y hệt lúc nãy */
+.bg-blue {
+    background-color: #0d6efd;
+    color: white;
+}
+.bg-yellow {
+    background-color: #ffc107;
+    color: #333;
+}
+.bg-cyan {
+    background-color: #0dcaf0;
+    color: white;
+}
+.bg-green {
+    background-color: #198754;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header div {
+    padding: 0;
+}
+
+.header div a{
+    padding: 0;
+}
+
+.footer{
+
+    background-color: #cc0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+.footer p {
+    margin: 0 auto;
+    padding: 5px auto;
+    font-size: 9px;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: #cc0000;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #fff;
+    color: #cc0000;
+}
+
+/* ===== Form Styling ===== */
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+    width: fit-content;
+    /*width: 100%;
+        max-width: 500px;*/
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+    padding: 8px;
+    margin: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 180px;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #0078D4; /* FPT Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #005ea6;
+}
+
+
+
+
+/* ===== Table Styling ===== */
+.table-container{
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 16px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #cc0000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== CRUD Button Classes ===== */
+a, button {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
+}
+
+
+
+
+/* Create */
+.btnCreate {
+    background-color: #00A859; /* FPT Green */
+}
+.btnCreate:hover {
+    background-color: #008947;
+}
+
+/* Edit */
+.btnEdit {
+    background-color: #0078D4; /* FPT Blue */
+}
+.btnEdit:hover {
+    background-color: #005ea6;
+}
+
+/* Delete */
+.btnDelete {
+    background-color: #C62828; /* Red tone */
+}
+.btnDelete:hover {
+    background-color: #a31d1d;
+}
+
+/* Details */
+.btnDetails {
+    background-color: #FF6600; /* FPT Orange */
+}
+.btnDetails:hover {
+    background-color: #e55a00;
+}
+
+/* Search */
+.btnSearch {
+    background-color: #0078D4;
+}
+.btnSearch:hover {
+    background-color: #005ea6;
+}
+
+/* Logout */
+.btnLogout {
+    background-color: #cc0000;
+}
+.btnLogout:hover {
+    background-color: #fff;
+    color: #cc0000;
+}
+
+
+select{
+    padding:6px;
+    border-radius:4px;
+}
+
+.hero{
+    background-image: url("../..//images/repairshop.png");
+    height: 500px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1{
+    font-size: 40px;
+}
+
+.hero-text p{
+    font-size: 20px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topnav a{
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    table{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hero{
+        height: 300px;
+    }
+
+    .hero-text h1{
+        font-size: 28px;
+    }
+
+    .hero-text p{
+        font-size: 16px;
+    }
+
+}
+
+.errSearch {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    margin: 10px auto;
+}
