@@ -71,6 +71,7 @@ public class CustomerBookingDAO extends DBContext {
             return false;
         }
     }
+   
 
     public int countWaitingBookings() {
         int count = 0;
@@ -283,4 +284,6 @@ public class CustomerBookingDAO extends DBContext {
             return false;
         }
     }
+    
+    //todo
 }
