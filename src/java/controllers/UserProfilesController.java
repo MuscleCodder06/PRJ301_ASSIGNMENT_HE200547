@@ -68,7 +68,7 @@ public class UserProfilesController extends HttpServlet {
             
             UserProfile usp = upDAO.GetUserProfileByUsername(username);
             RequestDispatcher rd = request.getRequestDispatcher("views/admin/StaffDetail.jsp");
-            request.setAttribute("userprofile", usp);
+            request.setAttribute("profile", usp);
             rd.forward(request, response);
         }
     } 
